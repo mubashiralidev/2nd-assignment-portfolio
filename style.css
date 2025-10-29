@@ -80,6 +80,7 @@ body {
   padding: 80px 100px;
   height: 100vh;
   background-color: #2c2d34;
+  flex-wrap: wrap;
 }
 .hero-left {
   width: 30%;
@@ -224,6 +225,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -315,4 +317,91 @@ body {
 .arrow {
   font-size: 20px;
   color: #f6c20f;
+}
+/* For tablet */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-center {
+    margin: 40px 0;
+  }
+
+  .brands-section {
+    gap: 25px;
+  }
+
+  .services {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+/* For Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-center {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .brands-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services {
+    padding: 40px 5%;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
